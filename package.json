@@ -1,0 +1,16 @@
+{
+  "name": "playwright_tests_n-ix_withoutdocker",
+  "version": "1.0.0",
+  "description": "These tests work with already run app",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
