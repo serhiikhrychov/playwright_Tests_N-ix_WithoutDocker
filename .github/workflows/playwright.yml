@@ -24,7 +24,8 @@ jobs:
           export BASE_URL
       - name: Run Playwright tests
         run: npx playwright test
-        env: BASE_URL=${{vars.BASE_URL}}
+        env:
+          BASE_URL: ${{vars.BASE_URL}}
       - uses: actions/upload-artifact@v3
         if: always()
         with:
