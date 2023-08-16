@@ -19,7 +19,9 @@ jobs:
         run: npx playwright install --with-deps
       - name: Set up environment
         run: |
-          echo "BASE_URL value is ${{vars.BASE_URL}}"
+          BASE_URL=${{vars.BASE_URL}}
+          echo "Using BASE_URL: BASE_URL"
+          export BASE_URL
       - name: Run Playwright tests
         run: npx playwright test
       - uses: actions/upload-artifact@v3
